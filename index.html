@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Home</title>
+    </head>
+    <body>
+        <header class="bg-blue-950 shadow-md shadow-blue-500 flex flex-col h-fit md:flex-row fixed">
+            <div class="logo text-white">
+                <h1 class="text-5xl cursor-pointer">URCAR</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li id="car-s">sportes car</li>
+                    <li id="car-n">normal car</li>
+                </ul>
+            </nav>
+            <div class="users flex" >
+                <ul id="links">
+                    <li class="li-login"><a href="login.html">login</a></li>
+                    <li class="li-register"><a href="register.html">register</a></li>
+                </ul>
+                <ul id="user-info">
+                    <li><a href="#" id="user"></a></li>
+                    <li class="li-cart">
+                        <span class="main-span relative">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="count-prod" class="size-5 text-center">0</span>
+                            <div class="carts-prod absolute">
+                                <div class="cart-prods"></div>
+                                <a href="cart.html" id="cart">View all products</a>
+                            </div>
+                        </span>
+                    </li>
+                    <li><a href="" id="logout">LOG OUT</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="Home h-fit">
+            <div class="contianer mt-[170px]">
+                <div class="products relative gap-y-10 md:gap-2">
+                    <div class="product relative gap-6 flex flex-col md:flex-row h-fit md:h-[150px] mb-4">
+                        <div class="product-img-container">
+                            <img class="img-normal" alt="iteam img" src="imges/social-media-dark.png">
+                            <img class="img-blured" alt="iteam img" src="imges/social-media-dark.png">
+                        </div>
+                        <div class="product-des">
+                            <h2 class="item-title">BMW</h2>
+                            <p  class="item-disc">dark blue</p>
+                        </div>
+                        <div class="product-act">
+                            <button class="add-cart bg-blue-200">add</button>
+                            <i class="fa-regular fa-heart fav"></i>
+                            <input type="number" name="number" class="qty-input" min="1" value="1" placeholder="Enter quantity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/script.js"></script>        
+    </body>
+</html>
