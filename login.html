@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>login</title>
+</head>
+<body>
+    <header>
+        <div class="logo-head"><a href="index.html"><img src="imges/meformal.jpg" alt="logo"></a></div>
+        <div class="head-parent">
+            <ul class="links">
+                <li class="login"><a href="login.html">login</a></li>
+                <li class="register"><a href="register.html">register</a></li>
+            </ul>
+            <ul class="user-info">
+                <li class="user"><a href="">Hello, </a></li>
+                <li class="cart">
+                        <a href="cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i><span id="count-prod">0</span>
+                        </a>
+                </li>
+                <li class="logout" id="logout"><a href="">logout</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="">
+        <form action="login.html" class="form for-login">
+            <label for="input-email">Email
+                <input type="email" name="email" id="email">
+            </label>
+            <label for="password">
+                password
+                <input type="password" name="password" id="password">
+            </label>
+            <button type="submit" class="logbtn" id="sing_up">Sign Up</button>
+            <h3>Have an account? <a href="login.html">Sign Up</a></h3>
+            <label for="checkbox">
+            <input type="checkbox" name="rember" id="checkbox"> Remmber me
+            </label>
+        </form>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -21,7 +21,7 @@ function drawitem() {
                 <img src="${item.imgurl}" alt="img of product">
             </div>
             <div class="disc-prod">
-                <h1>${item.title}</h1>
+                <h1 class="font-blod text-xl" >${item.title}</h1>
                 <h4>price:${item.price}</h4>
                 <h4 class="catigory" id="catigory">catigory:${item.catigory}</h4>
                 <div class="action">
