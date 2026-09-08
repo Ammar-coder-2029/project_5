@@ -24,6 +24,8 @@ header{
 
         ul{
             display: flex;
+            align-items: center;
+            justify-content: center;
             gap: 20px;
         }
         .register a,.login a ,.logout a{
@@ -82,7 +84,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    min-height:calc( 100dvh - 60px);
+    min-height:calc( 100dvh - 80px);
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -99,7 +101,6 @@ main{
     .search{
         width: 90%;
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 20px;
@@ -135,6 +136,7 @@ main{
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
+        position: relative;
     }
     .product{
         width: 400px;
@@ -193,6 +195,8 @@ main{
         transform: translateY(-5px);
         border: 3px solid rgb(8, 131, 24);
         box-shadow: 0 0 25px 3px black;
+        backdrop-filter: blur(17px);
+        -webkit-backdrop-filter: blur(17px);
     }
     .form{
         display: flex;
@@ -207,7 +211,7 @@ main{
         border: 1px solid rgba(255, 255, 255, 0.25);
         background: rgba(255, 255, 255, 0.15);
         -webkit-backdrop-filter: blur(100px);
-        backdrop-filter: blur(100px);
+        backdrop-filter: blur(30px);
         .names{
             display: flex;
             width: 100%;
@@ -236,7 +240,7 @@ main{
             }
         }
         button{
-            width:10%;
+            width:25%;
             text-align: center;
             padding: 10px 4px;
             background-color: oklch(51.02% 0.12831 151.46);
@@ -251,36 +255,17 @@ main{
         }
     }
 }
-.m-main::before{
-    content:"";
-    position: absolute;
-    inset: 0;
+.m-main,.m-login,.m-register{
+    background-size: cover;
+    background-position: center;
+}
+.m-main{
     background-image: url(../imges/palnt-green.jpg);
-    background-size: cover;
-    background-position: center;
-    filter: blur(17px);
-    transform: scale(1.1);
-    z-index: -1;
+    
 }
-.m-register::before{
-    content:"";
-    position: absolute;
-    inset: 0;
+.m-register{
     background-image: url(../imges/palnt-blue.jfif);
-    background-size: cover;
-    background-position: center;
-    filter: blur(17px);
-    transform: scale(1.1);
-    z-index: -1;
 }
-.m-login::before{
-    content:"";
-    position: absolute;
-    inset: 0;
+.m-login{
     background-image: url(../imges/palnt-yellow.jfif);
-    background-size: cover;
-    background-position: center;
-    filter: blur(17px);
-    transform: scale(1.1);
-    z-index: -1;
 }

@@ -1,6 +1,6 @@
 let allproducts = document.querySelector(".products")
 let products = [
-    {id: 1, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 1, title: "JETOUR", imgurl: "imges/palnt-blue.jfif", price: 100, qty: 1, catigory: "normal" },
     {id: 2, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
     {id: 3, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
     {id: 4, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
