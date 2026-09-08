@@ -9,8 +9,7 @@
     <title>login</title>
 </head>
 <body>
-    <header>
-        <div class="logo-head"><a href="index.html"><img src="imges/meformal.jpg" alt="logo"></a></div>
+    <header class="flex-col md:flex-row py-3 gap-4">        <div class="logo-head"><a href="index.html"><img src="imges/meformal.jpg" alt="logo"></a></div>
         <div class="head-parent">
             <ul class="links">
                 <li class="login"><a href="login.html">login</a></li>
@@ -27,20 +26,22 @@
             </ul>
         </div>
     </header>
-    <main class="">
+    <main class="m-login">
         <form action="login.html" class="form for-login">
-            <label for="input-email">Email
-                <input type="email" name="email" id="email">
-            </label>
-            <label for="password">
-                password
-                <input type="password" name="password" id="password">
-            </label>
-            <button type="submit" class="logbtn" id="sing_up">Sign Up</button>
-            <h3>Have an account? <a href="login.html">Sign Up</a></h3>
-            <label for="checkbox">
-            <input type="checkbox" name="rember" id="checkbox"> Remmber me
-            </label>
+            <div class="input-group">
+                <input type="email" name="email" id="email" placeholder=" " required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" id="password" placeholder=" " required>
+                <label for="password">Password</label>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" name="rember" id="checkbox">
+                <label for="checkbox">Remember me</label>
+            </div>
+            <button type="submit" class="logbtn" id="sing_up">Sign In</button>
+            <h3>Don't have an account? <a href="register.html">Sign Up</a></h3>
         </form>
     </main>
     <script src="js/login.js"></script>

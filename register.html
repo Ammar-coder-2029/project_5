@@ -9,7 +9,7 @@
     <title>register</title>
 </head>
 <body>
-    <header>
+    <header class="flex-col md:flex-row py-3 gap-4">
         <div class="logo-head"><a href="index.html"><img src="imges/meformal.jpg" alt="logo"></a></div>
         <div class="head-parent">
             <ul class="links">
@@ -27,24 +27,24 @@
             </ul>
         </div>
     </header>
-    <main class="">
+    <main class="m-register">
         <form action="register.html" class="form for-register">
             <div class="names">
                 <div class="input-group">
-                    <input type="text" name="userFname" id="userFname" placeholder="Enter Your First Name " required>
+                    <input type="text" name="userFname" id="userFname" placeholder=" " required>
                     <label for="userFname">First name</label>
                 </div>
                 <div class="input-group">
-                    <input type="text" name="userLname" id="userLname" placeholder="Enter Your Last Name " required>
+                    <input type="text" name="userLname" id="userLname" placeholder=" " required>
                     <label for="userLname">Last name</label>
                 </div>
             </div><!--names-->
             <div class="input-group">
-                <input type="email" name="email" id="email" placeholder="Enter Your Email " required>
+                <input type="email" name="email" id="email" placeholder=" " required>
                 <label for="email">Email</label>
             </div>
             <div class="input-group">
-                <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+                <input type="password" name="password" id="password" placeholder=" " required>
                 <label for="password">Password</label>
             </div>
             <button type="submit" class="logbtn" id="sing_up">Sign Up</button>

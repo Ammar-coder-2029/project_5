@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "background-color: -webkit-liner-gradient(right,white,oklch(39.3% 0.095 152.535))",
+          "background-color: oklch(39.3% 0.095 152.535)"
+        ]
+      }
+    ]
+  }
+}

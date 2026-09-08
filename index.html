@@ -10,7 +10,7 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
+    <header class="flex-col md:flex-row py-3 gap-4">
         <div class="logo-head"><a href="index.html"><img src="imges/meformal.jpg" alt="logo"></a></div>
         <div class="head-parent">
             <ul class="links">
@@ -29,7 +29,7 @@
             </ul>
         </div>
     </header>
-    <main class="">
+    <main class="m-main">
         <section class="search">
             <select id="selector" title="type of search">
                 <option value="">search by title</option>
@@ -48,7 +48,7 @@
                     <h4>price:1000</h4>
                     <h4 class="catigory" id="catigory">catigory:caaaaaa</h4>
                     <div class="action">
-                        <i class="fa-solid fa-heart"></i>
+                        <span class="cursor-pointer" id="add-to-fav"><i class="fa-solid fa-heart"></i></span>
                         <button type="submit" class="" id="add-to-cart">add to cart</button>
                     </div>
                 </div>

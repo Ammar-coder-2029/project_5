@@ -1,17 +1,17 @@
 let allproducts = document.querySelector(".products")
 let products = [
-    {id: 1, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 2, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 3, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 4, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 5, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 6, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 7, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 8, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 9, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 10, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 11, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
-    {id: 12, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, type: "normal" },
+    {id: 1, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 2, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 3, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 4, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 5, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 6, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 7, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 8, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 9, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 10, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 11, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
+    {id: 12, title: "JETOUR", imgurl: "imges/grayJETOUR.jpg", price: 100, qty: 1, catigory: "normal" },
 ];
 
 function drawitem() {
@@ -22,11 +22,11 @@ function drawitem() {
             </div>
             <div class="disc-prod">
                 <h1 class="font-blod text-xl" >${item.title}</h1>
-                <h4>price:${item.price}</h4>
-                <h4 class="catigory" id="catigory">catigory:${item.catigory}</h4>
+                <h4>price: ${item.price}</h4>
+                <h4 class="catigory" id="catigory">catigory: ${item.catigory}</h4>
                 <div class="action">
-                    <i class="fa-solid fa-heart"></i>
-                    <button type="submit" class="" id="add-to-cart">add to cart</button>
+                    <span class="cursor-pointer" id="add-to-fav"><i class="fa-solid fa-heart"></i></span>
+                    <button catigory="submit" class="" id="add-to-cart">add to cart</button>
                 </div>
             </div>
         </div>`
