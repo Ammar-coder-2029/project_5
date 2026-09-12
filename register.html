@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png/svg" href="imges/pagelines-brands-solid-full.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -10,25 +11,16 @@
 </head>
 <body>
     <header class="flex-col md:flex-row py-3 gap-4">
-        <div class="logo-head"><a href="index.html"><img src="imges/meformal.jpg" alt="logo"></a></div>
+        <div class="logo-head"><a href="index.html"><img src="imges/plant-logo.png" alt="logo"></a></div>
         <div class="head-parent">
             <ul class="links">
                 <li class="login"><a href="login.html">login</a></li>
                 <li class="register"><a href="register.html">register</a></li>
             </ul>
-            <ul class="user-info">
-                <li class="user"><a href="">Hello, </a></li>
-                <li class="cart">
-                        <a href="cart.html">
-                            <i class="fa-solid fa-cart-shopping"></i><span id="count-prod">0</span>
-                        </a>
-                </li>
-                <li class="logout" id="logout"><a href="">logout</a></li>
-            </ul>
         </div>
     </header>
     <main class="m-register">
-        <form action="register.html" class="form for-register">
+        <form action="register.html" class="form for-register" id="registerForm">
             <div class="names">
                 <div class="input-group">
                     <input type="text" name="userFname" id="userFname" placeholder=" " required>
