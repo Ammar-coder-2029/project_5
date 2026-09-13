@@ -127,7 +127,7 @@ function drawCartItem(item) {
     return `
         <div class="pop-list-countainer p-1 gap-y-[5px] backdrop-blur-3xl">
             <div class="pop-disc flex gap-x-2 align-center p-1">
-                <h3 class="text-xl font-bold item-title">${item.title}</h3>
+                <h3 class="text-lg font-bold item-title">${item.title}</h3>
                 <h4 class="text-lg item-price">price:$
                     <p class="text-lg inline-block">${item.price * item.qty}</p>
                 </h4>
